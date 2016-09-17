@@ -80,6 +80,7 @@ public class JmxStores
         addStoreToJmxStores(JmxConstant.TOMCAT_MBEAN_STORE_NAME,null);
         addStoreToJmxStores(JmxConstant.WEBSPHERE_MBEAN_STORE_NAME,null);
         addStoreToJmxStores(JmxConstant.WEBLOGIC_MBEAN_STORE_NAME,null);
+        addStoreToJmxStores(JmxConstant.KARAF_MBEAN_STORE_NAME,null);
         /*
          * The JdkJMXAbstraction needs to be the last entry in the list to avoid the 
          * version information being processed from the JdkJMXAbstraction MBean store.

@@ -169,6 +169,11 @@ public class JeeServerInfo extends GenericStatistics
                 {
                     ServerName = getJMXAttribute(ijmx, "WebSphere:j2eeType=J2EEServer,*", "platformName");
                 }
+                else
+                    if(storename.compareTo(JmxConstant.KARAF_MBEAN_STORE_NAME)==0)
+                    {
+                    	ServerName = "JBoss A-MQ (on Karaf)";
+                    }
             }            
         }
         
@@ -224,6 +229,11 @@ public class JeeServerInfo extends GenericStatistics
                 if(storename.compareTo(JmxConstant.WEBSPHERE_MBEAN_STORE_NAME)==0)
                 {
                     ServerVersion = getJMXAttribute(ijmx, "WebSphere:j2eeType=J2EEServer,*", "platformVersion");
+                }
+                else
+                if(storename.compareTo(JmxConstant.KARAF_MBEAN_STORE_NAME)==0)
+                {
+                	ServerVersion = getJMXAttribute(ijmx, "org.apache.activemq:brokerName=*,type=Broker", "BrokerVersion");
                 }
             }            
         }

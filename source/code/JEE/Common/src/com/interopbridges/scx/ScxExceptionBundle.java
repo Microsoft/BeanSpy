@@ -94,7 +94,7 @@ public class ScxExceptionBundle {
     /**
      * <p>
      * Get the localized message for the given Exception Code.
-     * </p
+     * </p>
      * 
      * @param key
      *            A key to look-up in the resource file.

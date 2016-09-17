@@ -286,4 +286,5 @@ public class JmxConstant {
      public static final String WEBSPHERE_MBEAN_STORE_NAME = "com.interopbridges.scx.jmx.WebSphereJMXAbstraction";
      public static final String WEBLOGIC_MBEAN_STORE_NAME = "com.interopbridges.scx.jmx.WeblogicRuntimeJMXAbstraction";
      public static final String JDK_MBEAN_STORE_NAME = "com.interopbridges.scx.jmx.JdkJMXAbstraction";
+     public static final String KARAF_MBEAN_STORE_NAME = "com.interopbridges.scx.jmx.KarafJMXAbstraction";
 }
